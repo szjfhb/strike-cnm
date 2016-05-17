@@ -1,4 +1,5 @@
-# Strike-cnm
+# 什么是Strike-CNM?
+Mobile Strike 联盟China National Mass介绍页面, 此页面发布在: http://strike-cnm.surge.sh/
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
