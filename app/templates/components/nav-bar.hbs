@@ -1,28 +1,16 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#NavMap" aria-expended="false">
-				<span class="sr-only">Navgation</span>
-			</button>
-			<a class="navbar-brand">China National Mass</a>
-		</div>
-		<div class="collapse navbar-collapse" id="NavMap">
-			<ul class="nav navbar-nav">
-				<li>{{#link-to "index" }}关于/About{{/link-to}}</li>
-				<li>{{#link-to "starter" }}常见问题/Q&A{{/link-to}}</li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li>
-				<a {{action 'showQRCode'}} role="button">加入微信群<span class="caret"></span></a>
-				{{#if isShowQRCode}}
-				<div class="PopDiv">
-					扫码加入
-					<div id="QRCode"></div>
-					<small>失效日期: 05/23/2016</small>
-				</div>
-				{{/if}}
-				</li>
-			</ul>
-		</div>
+<div style="width:730px;margin: 0 auto;">
+ <ul class="nav nav-pills">
+	<li role="presentation">{{#link-to "index" }}关于我们{{/link-to}}</li>
+	<li role="presentation">{{#link-to "starter" }}常见问题{{/link-to}}</li>
+	<li  role="presentation">
+	<a {{action 'ToggleQRCode'}} role="button">加入微信群<span class="caret"></span></a>
+	{{#if isShowQRCode}}
+	<div class="PopDiv">
+	扫码加入
+	<img id="QRCode" src='QRCode.png'>
+	<small>失效日期: 06/01/2016</small>
 	</div>
-</nav>
+	{{/if}}
+	</li>
+</ul>
+</div>

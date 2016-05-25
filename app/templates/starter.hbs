@@ -1,20 +1,8 @@
-	<h3>常见问题/Q&A</h3>
-	<ul class="list-unstyled list-inline" style="text-align:left;">
-		<li><p><span>Q:如何加入联盟?
-		</span></p><p>A:找到我们的联盟, 搜索 CNM 就可以了!微信群请扫描二维码加入!</p></li>
-		<li><p><span>Q:如何加入联盟?
-		</span></p><p>A:找到我们的联盟, 搜索 CNM 就可以了!微信群请扫描二维码加入!</p></li>
-		<li><p><span>Q:如何加入联盟?
-		</span></p><p>A:找到我们的联盟, 搜索 CNM 就可以了!微信群请扫描二维码加入!</p></li>
-		<li><p><span>Q:如何加入联盟?
-		</span></p><p>A:找到我们的联盟, 搜索 CNM 就可以了!微信群请扫描二维码加入!</p></li>
-		<li><p><span>Q:如何加入联盟?
-		</span></p><p>A:找到我们的联盟, 搜索 CNM 就可以了!微信群请扫描二维码加入!</p></li>
-		<li><p><span>Q:如何加入联盟?
-		</span></p><p>A:找到我们的联盟, 搜索 CNM 就可以了!微信群请扫描二维码加入!</p></li>
-		<li><p><span>Q:如何加入联盟?
-		</span></p><p>A:找到我们的联盟, 搜索 CNM 就可以了!微信群请扫描二维码加入!</p></li>
-		<li><p><span>Q:如何加入联盟?
-		</span></p><p>A:找到我们的联盟, 搜索 CNM 就可以了!微信群请扫描二维码加入!</p></li>
-	</ul>
+	<h3>常见问题</h3>
+	<ol style="text-align:left;">
+		{{#each model as |QA|}}
+		<li><p class="Question">{{{QA.Q}}}?</p>
+			<p>{{{QA.A}}}</p></li>
+		{{/each}}
+	</ol>
 {{outlet}}

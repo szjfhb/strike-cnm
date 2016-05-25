@@ -8,37 +8,37 @@ body
 {
  font-family: Verdana,微软雅黑,宋体;
  background-color: #333;
- color: #bbb;
- padding: 10px;
- padding-top: 180px	;
- width: 716px;
+ color: #ccc;
+ padding-top: 5px;
+ /*padding-top: 180px	;*/
+ /*width: 980px;*/
  min-width:716px;
  scroll-behavior: auto;
  text-align: center;
- line-height: 1;
+ /*line-height: 1;*/
  margin: 0 auto;
  font-size: 16px;
 }
 
-h1,h2,h3,h4,h5,h6
+.Question
 {
-	line-height: 0.6;
+	font-weight: 800;
 }
 #ms-log
 {
-	position: fixed;
-	background-image: url(/mslogo_horiz.png);
+	/*position: fixed;*/
+	content: url(/mslogo_horiz.png);
 	background-color: #333;
 	width:716px;
 	height: 136px;
 	border: 0px;
 	margin: 0;
-	top:50px;
+	/*top:50px;*/
 }
 
 #QRCode
 {
-	background-image: url(/QRCode.png);
+	/*src: url(/QRCode.png);*/
 	background-size: contain;
 	width: 200px;
 	height: 200px;
@@ -50,6 +50,8 @@ h1,h2,h3,h4,h5,h6
 {
 /*	height: 600px;
 	overflow: auto;*/
+	width:716px;
+	margin: 0 auto;
 	border-bottom: 2px dotted white;
 }
 
