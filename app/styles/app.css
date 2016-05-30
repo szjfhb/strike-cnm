@@ -1,0 +1,80 @@
+/*// Scaffolding
+LESS 此处不可用...
+@body-bg:    #000;
+@text-color: @black-30;
+@line-height-base: 0.9;*/
+
+body
+{
+ font-family: Verdana,微软雅黑,宋体;
+ background-color: #333;
+ color: #ccc;
+ padding-top: 5px;
+ /*padding-top: 180px	;*/
+ /*width: 980px;*/
+ min-width:716px;
+ scroll-behavior: auto;
+ text-align: center;
+ /*line-height: 1;*/
+ margin: 0 auto;
+ font-size: 16px;
+}
+
+.Question
+{
+	font-weight: 800;
+}
+#ms-log
+{
+	/*position: fixed;*/
+	content: url(/mslogo_horiz.png);
+	background-color: #333;
+	width:716px;
+	height: 136px;
+	border: 0px;
+	margin: 0;
+	/*top:50px;*/
+}
+
+#QRCode
+{
+	/*src: url(/QRCode.png);*/
+	background-size: contain;
+	width: 200px;
+	height: 200px;
+	border: 0px;
+	margin: 3px auto;
+}
+
+#container
+{
+/*	height: 600px;
+	overflow: auto;*/
+	width:716px;
+	margin: 0 auto;
+	border-bottom: 2px dotted white;
+}
+
+.PopDiv{
+  position: absolute;
+  top: 62px;
+  right: 5px;
+  padding:5px;
+  /*border: 1px solid #eee;*/
+  background-color: white;
+  /*margin-top: 13px;*/
+  border-radius: 5px;
+}
+
+.PopDiv::before,.PopDiv::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: -20px;
+    right: 30px;
+}
+
+.PopDiv::before {    
+    border: 10px solid transparent;
+    border-bottom-color: white;
+}
