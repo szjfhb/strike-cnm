@@ -1,8 +1,11 @@
 	<h3>常见问题</h3>
 	<ol style="text-align:left;">
 		{{#each model as |QA|}}
-		<li><p class="Question">{{{QA.Q}}}?</p>
-			<p>{{{QA.A}}}</p></li>
+			<li><p class="Question">{{{QA.Q}}}</p>
+				{{#each QA.A as |ptext|}}
+				<p>{{{ptext}}}</p>
+				{{/each}}
+			</li>
 		{{/each}}
 	</ol>
 {{outlet}}

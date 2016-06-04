@@ -1,14 +1,14 @@
-<div style="width:730px;margin: 0 auto;">
+<div style="width:730px;margin: 0 auto;background-color:#000;">
  <ul class="nav nav-pills">
 	<li role="presentation">{{#link-to "index" }}关于我们{{/link-to}}</li>
-	<li role="presentation">{{#link-to "starter" }}常见问题{{/link-to}}</li>
-	<li  role="presentation">
+ 	<li role="presentation">{{#link-to "starter" }}常见问题{{/link-to}}</li>
+	<li  role="presentation" class="active">
 	<a {{action 'ToggleQRCode'}} role="button">加入微信群<span class="caret"></span></a>
 	{{#if isShowQRCode}}
 	<div class="PopDiv">
 	扫码加入
 	<img id="QRCode" src='QRCode.png'>
-	<small>失效日期: 06/01/2016</small>
+	<small>失效日期: 06/11/2016</small>
 	</div>
 	{{/if}}
 	</li>
