@@ -2,13 +2,13 @@
  <ul class="nav nav-pills">
 	<li role="presentation">{{#link-to "index" }}关于我们{{/link-to}}</li>
  	<li role="presentation">{{#link-to "starter" }}常见问题{{/link-to}}</li>
-	<li  role="presentation" class="active">
-	<a {{action 'ToggleQRCode'}} role="button">加入微信群<span class="caret"></span></a>
+	<li  role="presentation" id="wechat" class="active">
+		<a {{action 'ToggleQRCode'}} role="button"><span class="new"></span>加入微信群<span class="caret"></span></a>
 	{{#if isShowQRCode}}
 	<div class="PopDiv">
 	扫码加入
-	<img id="QRCode" src='QRCode.png'>
-	<small>失效日期: 06/11/2016</small>
+	<img id="QRCode" src='http://raw.githubusercontent.com/szjfhb/strike-cnm/master/QRCode.png'>
+	<small>失效日期: 06/19/2016</small>
 	</div>
 	{{/if}}
 	</li>
