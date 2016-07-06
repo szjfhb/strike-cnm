@@ -17,3 +17,6 @@ npm-debug.log
 testem.log
 
 strike.sublime-workspace
+.vs*
+jsconfig.json
+typings/*
